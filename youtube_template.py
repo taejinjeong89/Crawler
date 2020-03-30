@@ -5,17 +5,12 @@ from Crawler_Functions import crawl_youtube_function
 ## Set-up Chunk
 
 cy = crawl_youtube_function
-# domain_idol = open('./idol_list.txt', 'r')
-# domain_idol = domain_idol.read().splitlines()
+domain_idol = open('./idol_list.txt', 'r')
+domain_idol = domain_idol.read().splitlines()
 # main_dir = os.getcwd()
 
-#test
-domain_idol = ['IU', 'BTS', 'Zico']
-
-##
-
 ## Crawl Part
-for r,_ in enumerate(range(2), start=1):
+for r,_ in enumerate(range(30), start=1):
     for idol in domain_idol:
         # main_dir = os.path.join(main_dir, idol)
         # if not os.path.exists(main_dir):
